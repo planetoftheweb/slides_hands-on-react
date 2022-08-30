@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="arrow-functions" tabindex="-1">Arrow Functions <a class="direct-link" href="#arrow-functions"> </a></h1>
+<h1 id="arrow-functions" tabindex="-1">Arrow Functions</h1>
 <div class="slide-link"><a href="https://go.raybo.org/9aK8"><i class="fab fa-slideshare"></i> go.raybo.org/9aK8</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>Arrow functions are a newer feature in JavaScript that changes the way you can write functions...in a good way.</p>
 <hr>
-<h1 id="shortcut" tabindex="-1">Shortcut <a class="direct-link" href="#shortcut"> </a></h1>
+<h1 id="shortcut" tabindex="-1">Shortcut</h1>
 <pre><code class="language-js">let square = function(a) {
    return a * a
 }
@@ -318,7 +318,7 @@ console.log(square(2))
 <p>let square = a =&gt; a * a</p>
 <p>You can see that arrow functions can be way shorter than traditional functions, but you can't just use them everywhere.</p>
 <hr>
-<h1 id="arrows-and-objects" tabindex="-1">Arrows and Objects <a class="direct-link" href="#arrows-and-objects"> </a></h1>
+<h1 id="arrows-and-objects" tabindex="-1">Arrows and Objects</h1>
 <pre><code class="language-js">info = {
   social: {
     youtube: 'https://youtube.com/planetoftheweb',
@@ -336,7 +336,7 @@ info.logSocial();
 <pre><code class="language-js">logSocial: () =&gt; console.log (this.social.youtube)
 </code></pre>
 <hr>
-<h1 id="object-shortcut" tabindex="-1">Object Shortcut <a class="direct-link" href="#object-shortcut"> </a></h1>
+<h1 id="object-shortcut" tabindex="-1">Object Shortcut</h1>
 <pre><code class="language-js">info = {
   social: {
     youtube: 'https://youtube.com/planetoftheweb',
@@ -352,7 +352,7 @@ info.logSocial();
 </blockquote>
 <p>Here's a bonus tip, you can get rid of the function keyword when creating a method and get rid of the colon.</p>
 <hr>
-<h1 id="arguments" tabindex="-1">Arguments <a class="direct-link" href="#arguments"> </a></h1>
+<h1 id="arguments" tabindex="-1">Arguments</h1>
 <pre><code class="language-js">function add(...theArgs) {
   let argSum = theArgs.reduce((sum, val) =&gt; sum + val)
   return argSum;
@@ -366,7 +366,7 @@ console.log(output) //15
 <p>The arguments array like object is not available with Arrow functions, but you can use the rest parameters to get to arguments as well.</p>
 <p>Here I rewrote a previous internal function as an arrow function and used theargs rest variable to pass things along.</p>
 <hr>
-<h1 id="destructuring" tabindex="-1">Destructuring <a class="direct-link" href="#destructuring"> </a></h1>
+<h1 id="destructuring" tabindex="-1">Destructuring</h1>
 <pre><code class="language-js">function add(...theArgs) {
   let argSum = theArgs.reduce((sum, val) =&gt; sum + val)
   return argSum;

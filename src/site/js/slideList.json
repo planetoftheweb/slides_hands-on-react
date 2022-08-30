@@ -1,9 +1,12 @@
 [{
     "filename": "00_01",
-    "title": "JavaScript Functions" }
+    "title": "Hands-on JavaScript" }
 ,{
     "filename": "00_03",
     "title": "Slides" }
+,{
+    "filename": "01_01",
+    "title": "JSX" }
 ,{
     "filename": "01_02",
     "title": "Mechanics of Functions" }
@@ -55,7 +58,4 @@
 ,{
     "filename": "slides",
     "title": "" }
-,{
-    "filename": "01_01",
-    "title": "CodeSwing" }
 ]

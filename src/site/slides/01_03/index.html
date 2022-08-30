@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="definition-expressions" tabindex="-1">Definition Expressions <a class="direct-link" href="#definition-expressions"> </a></h1>
+<h1 id="definition-expressions" tabindex="-1">Definition Expressions</h1>
 <div class="slide-link"><a href="https://https://go.raybo.org/9UwV"><i class="fab fa-slideshare"></i> go.raybo.org/9UwV</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>You've already seen the basic way to declare a function, but there's another way that's pretty common called a Definition Expressions.</p>
 <hr>
-<h1 id="declaration%2Finvocation" tabindex="-1">Declaration/Invocation <a class="direct-link" href="#declaration%2Finvocation"> </a></h1>
+<h1 id="declaration%2Finvocation" tabindex="-1">Declaration/Invocation</h1>
 <pre><code class="language-js">const $ = document.querySelector.bind(document)
 
 function add(a, b) {
@@ -318,7 +318,7 @@ console.log(output)
 <p>Because we're using a return statement inside the function.</p>
 <p>We can use an assignment to invoke the function.</p>
 <hr>
-<h1 id="standalone-invocation" tabindex="-1">Standalone Invocation <a class="direct-link" href="#standalone-invocation"> </a></h1>
+<h1 id="standalone-invocation" tabindex="-1">Standalone Invocation</h1>
 <pre><code class="language-js">const $ = document.querySelector.bind(document)
 
 function add(a, b) {
@@ -336,7 +336,7 @@ add(2, 2)
 <p>So here, I'm adding the output statements directly inside the function declaration.</p>
 <p>That way we don't need to use an assignment and can just call the function directly.</p>
 <hr>
-<h1 id="definition-expression" tabindex="-1">Definition Expression <a class="direct-link" href="#definition-expression"> </a></h1>
+<h1 id="definition-expression" tabindex="-1">Definition Expression</h1>
 <pre><code class="language-js">const $ = document.querySelector.bind(document)
 
 let add = function(a, b) {
@@ -356,7 +356,7 @@ add(4, 4); //8
 <p>Notice that in this case, the function has no name...although there wouldn't be a problem for it to have a name here, but it's no necessary. This is known as an anonymous function.</p>
 <p>In this case, you still have to call the function, but now, you can use the add variable pretty much like the function call...and that means that we can call this add definition expression multiple times.</p>
 <hr>
-<h1 id="it's-iife" tabindex="-1">It's IIFE <a class="direct-link" href="#it's-iife"> </a></h1>
+<h1 id="it's-iife" tabindex="-1">It's IIFE</h1>
 <pre><code class="language-js">(function(a, b) {
   const $ = document.querySelector.bind(document)
   const c = a + b;

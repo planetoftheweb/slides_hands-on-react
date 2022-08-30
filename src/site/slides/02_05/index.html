@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="recursion" tabindex="-1">Recursion <a class="direct-link" href="#recursion"> </a></h1>
+<h1 id="recursion" tabindex="-1">Recursion</h1>
 <div class="slide-link"><a href="https://go.raybo.org/9eb1"><i class="fab fa-slideshare"></i> go.raybo.org/9eb1</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>It's time for something both dangerous and powerful that you can do with functions. It's called recursion.</p>
 <hr>
-<h1 id="calls-itself" tabindex="-1">Calls Itself <a class="direct-link" href="#calls-itself"> </a></h1>
+<h1 id="calls-itself" tabindex="-1">Calls Itself</h1>
 <pre><code class="language-js">function myself() {
     myself();
 }
@@ -309,7 +309,7 @@
 <p>Recursion happens whenever a function calls itself.</p>
 <p>You can clearly see where that could be dangerous. With this function, the program would just use up all of the available memory and run forever or until an error occurred.</p>
 <hr>
-<h1 id="base-case" tabindex="-1">Base Case <a class="direct-link" href="#base-case"> </a></h1>
+<h1 id="base-case" tabindex="-1">Base Case</h1>
 <pre><code class="language-js">function countUp(num, max) {
     if (num &gt; max) return;
     console.log(num);
@@ -327,7 +327,7 @@
 <p>That particular error is known as the Stack Overflow...which is also the name of a great site where you can ask other programmers questions.</p>
 <p>You might be wondering if it wouldn't be easier to run a loop and in this case, you'd be right. Let's take a look at a more complex example.</p>
 <hr>
-<h1 id="fibbonacci" tabindex="-1">Fibbonacci <a class="direct-link" href="#fibbonacci"> </a></h1>
+<h1 id="fibbonacci" tabindex="-1">Fibbonacci</h1>
 <pre><code class="language-js">let fibby = function (count) {
     if (count===1) return [0, 1]
     let arr = fibby(count-1)

@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="asynchronous-functions" tabindex="-1">Asynchronous Functions <a class="direct-link" href="#asynchronous-functions"> </a></h1>
+<h1 id="asynchronous-functions" tabindex="-1">Asynchronous Functions</h1>
 <div class="slide-link"><a href="https://go.raybo.org/9eeT"><i class="fab fa-slideshare"></i> go.raybo.org/9eeT</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>There's a way in which we can create functions that wait for certain things to happen.</p>
 <hr>
-<h1 id="async%2Fawait" tabindex="-1">Async/Await <a class="direct-link" href="#async%2Fawait"> </a></h1>
+<h1 id="async%2Fawait" tabindex="-1">Async/Await</h1>
 <ul>
 <li>Async identifies</li>
 <li>Await waits</li>
@@ -312,7 +312,7 @@
 <p>The keyword await defines a spot that stops the execution of a function until something else happens.</p>
 <p>These functions work when what's controlling the flow happen to be something called a promise.</p>
 <hr>
-<h1 id="async" tabindex="-1">Async <a class="direct-link" href="#async"> </a></h1>
+<h1 id="async" tabindex="-1">Async</h1>
 <pre><code class="language-js">async function doIt() {
     return console.log(&quot;I'm doing it&quot;);
 }
@@ -327,7 +327,7 @@ doIt().then( item =&gt; {
 <p>An Async function like this will return a promise.</p>
 <p>So we can call it and do something when that function resolves as being complete.</p>
 <hr>
-<h1 id="await" tabindex="-1">Await <a class="direct-link" href="#await"> </a></h1>
+<h1 id="await" tabindex="-1">Await</h1>
 <pre><code class="language-js">async function prep() {
     return console.log('Preparing')
 }
@@ -343,7 +343,7 @@ doIt();
 <p>The other part of defining an async function is that we can use await with it...stopping the execution of code until something else takes place.</p>
 <p>The thing you're waiting for needs to return some type of promise, so you can see here that we've created a prep function that's also an asynchronous function.</p>
 <hr>
-<h1 id="error-handling" tabindex="-1">Error Handling <a class="direct-link" href="#error-handling"> </a></h1>
+<h1 id="error-handling" tabindex="-1">Error Handling</h1>
 <pre><code class="language-js">async function prep() {
   	throw new Error(&quot;Not Possible&quot;);
 }
@@ -364,7 +364,7 @@ doIt();
 <p>You can use the try/catch statements to take care of any errors.</p>
 <p>Here, I'm throwing an error on purpose, but promises have a system for sending errors if something you're doing is not working.</p>
 <hr>
-<h1 id="fetching" tabindex="-1">Fetching <a class="direct-link" href="#fetching"> </a></h1>
+<h1 id="fetching" tabindex="-1">Fetching</h1>
 <pre><code class="language-js">async function getSocial() {
     const res = await fetch('./social.json')
     const data = await res.json();

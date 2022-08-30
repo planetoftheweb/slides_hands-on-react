@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="methods" tabindex="-1">Methods <a class="direct-link" href="#methods"> </a></h1>
+<h1 id="methods" tabindex="-1">Methods</h1>
 <div class="slide-link"><a href="https://go.raybo.org/9Xxu"><i class="fab fa-slideshare"></i> go.raybo.org/9Xxu</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>There's another way that JavaScript functions can be invoked...and that's through methods.</p>
 <hr>
-<h1 id="objects" tabindex="-1">Objects <a class="direct-link" href="#objects"> </a></h1>
+<h1 id="objects" tabindex="-1">Objects</h1>
 <pre><code class="language-js">info = {
   social: {
     youtube: 'https://youtube.com/planetoftheweb',
@@ -317,7 +317,7 @@
 <p>An object is the most flexible data types in JavaScript and they can hold many types of values including functions.</p>
 <p>So a method is just a function that has been assigned as a property of an object. Let's take a look at how you define one.</p>
 <hr>
-<h1 id="creating-a-method" tabindex="-1">Creating a Method <a class="direct-link" href="#creating-a-method"> </a></h1>
+<h1 id="creating-a-method" tabindex="-1">Creating a Method</h1>
 <pre><code class="language-js">info = {
   social: {...},
   logSocial: function(data) {
@@ -335,7 +335,7 @@ info.logSocial(info.social);
 <p>Assuming that the info object is created as in the previous slide, we can write a function...which is called a method when it's part of an object that logs the value of the different links.</p>
 <p>We call the method as part of the object, but it now will perform an action.</p>
 <hr>
-<h1 id="the-this-keyword" tabindex="-1">The <em>this</em> Keyword <a class="direct-link" href="#the-this-keyword"> </a></h1>
+<h1 id="the-this-keyword" tabindex="-1">The <em>this</em> Keyword</h1>
 <ul>
 <li>Object executing code
 <ul>
@@ -352,7 +352,7 @@ info.logSocial(info.social);
 <p>If you're using this in a regular function, this references the global object.</p>
 <p>If you use the this keyword inside a method then it references the object itself.</p>
 <hr>
-<h1 id="using-this-keyword" tabindex="-1">Using <em>this</em> Keyword <a class="direct-link" href="#using-this-keyword"> </a></h1>
+<h1 id="using-this-keyword" tabindex="-1">Using <em>this</em> Keyword</h1>
 <pre><code class="language-js">info = {
   social: {...},
   logSocial: function() {

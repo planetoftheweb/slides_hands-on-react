@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="parameters" tabindex="-1">Parameters <a class="direct-link" href="#parameters"> </a></h1>
+<h1 id="parameters" tabindex="-1">Parameters</h1>
 <div class="slide-link"><a href="https://go.raybo.org/9VUq"><i class="fab fa-slideshare"></i> go.raybo.org/9VUq</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>As you've seen, you can pass along parameters to functions that become variables inside the function. Let's take a deeper dive about parameters.</p>
 <hr>
-<h1 id="parameters%2Farguments" tabindex="-1">Parameters/Arguments <a class="direct-link" href="#parameters%2Farguments"> </a></h1>
+<h1 id="parameters%2Farguments" tabindex="-1">Parameters/Arguments</h1>
 <pre><code class="language-js">function add(a, b) {
   const c = a + b;
   return c;
@@ -315,7 +315,7 @@ const output = add(2, 2)
 <p>Those variables are known as the parameters of the function.</p>
 <p>When we call the function, the values we're passing to the function here are called arguments; So the arguments are being passed into the parameters. The difference is arguments are real values.</p>
 <hr>
-<h1 id="order-matters" tabindex="-1">Order Matters <a class="direct-link" href="#order-matters"> </a></h1>
+<h1 id="order-matters" tabindex="-1">Order Matters</h1>
 <pre><code class="language-js">function values(a, b, c) {
   console.log(a); // 1
   console.log(b); // 2
@@ -330,7 +330,7 @@ values(1,2);
 <p>The arguments are passed in the order they are received into the parameters.</p>
 <p>So, if you have a function that accepts three parameters, but you only send two arguments, the third would initialize as a variable inside the function, but it would have a value of undefined.</p>
 <hr>
-<h1 id="initializing" tabindex="-1">Initializing <a class="direct-link" href="#initializing"> </a></h1>
+<h1 id="initializing" tabindex="-1">Initializing</h1>
 <pre><code class="language-js">function add(a=0, b=0, c=0) {
   return a + b + c;
 }
@@ -344,7 +344,7 @@ console.log(output) //3
 <p>You can also pass along a default value when you declare the parameters. If a value isn't sent, then the default value will be applied. That can be pretty handy.</p>
 <p>In this example, since the value of C would normally be undefined, the addition would return a value of null.</p>
 <hr>
-<h1 id="arguments-object" tabindex="-1">Arguments Object <a class="direct-link" href="#arguments-object"> </a></h1>
+<h1 id="arguments-object" tabindex="-1">Arguments Object</h1>
 <pre><code class="language-js">function add() {
   let argsSum = 0;
   for (let x = 0; x &lt; arguments.length; x++) {
@@ -362,7 +362,7 @@ console.log(output) //15
 <p>There is a special array-like object that you can use to read the values of all of the arguments passed.</p>
 <p>Not surprisingly, it's called arguments. Notice I'm saying that it's an array-like object. It doesn't have access to several of the pretty useful methods you can use with arrays like sort, filter and map.</p>
 <hr>
-<h1 id="rest-parameters" tabindex="-1">Rest Parameters <a class="direct-link" href="#rest-parameters"> </a></h1>
+<h1 id="rest-parameters" tabindex="-1">Rest Parameters</h1>
 <pre><code class="language-js">function add(...theArgs) {
   let argSum = theArgs.reduce(function(sum, val) {
     return (sum + val)
@@ -381,7 +381,7 @@ console.log(output) //15
 <p>You can combine the rest parameter with other variables, but the rest parameter should always be at the end.</p>
 <p>Whereas the arguments object isn't a real array, the rest parameter is, that means you can use any method you can use in an array, so here I'm using the javascript reduce methods, which lets me go through each of the elements in the array and add them up easily.</p>
 <hr>
-<h2 id="objects-as-arguments" tabindex="-1">Objects as Arguments <a class="direct-link" href="#objects-as-arguments"> </a></h2>
+<h2 id="objects-as-arguments" tabindex="-1">Objects as Arguments</h2>
 <pre><code class="language-js">const $ = document.querySelector.bind(document)
 
 function displayCard(myObj) {

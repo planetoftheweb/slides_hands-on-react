@@ -68,7 +68,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">CodeSwing</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">JSX</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_01&#">
@@ -291,14 +291,14 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="closures" tabindex="-1">Closures <a class="direct-link" href="#closures"> </a></h1>
+<h1 id="closures" tabindex="-1">Closures</h1>
 <div class="slide-link"><a href="https://go.raybo.org/9e1a"><i class="fab fa-slideshare"></i> go.raybo.org/9e1a</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
 <p>I want to review a pattern that's really popular among computer programmers called closures.</p>
 <hr>
-<h1 id="closures-1" tabindex="-1">Closures <a class="direct-link" href="#closures-1"> </a></h1>
+<h1 id="closures-1" tabindex="-1">Closures</h1>
 <ul>
 <li>Use scope</li>
 <li>Lexical scope</li>
@@ -311,7 +311,7 @@
 <p>JavaScript, specially when talking about functions use something called lexical scope. With lexical scope, an inner function will have access to variables in the parent function.</p>
 <p>A closure is created when you use the function keyword inside and another function. Now that means that variables can remember the environment that they were created in. That doesn't happen in other types of languages. And it allows you to do some special things in JavaScript.</p>
 <hr>
-<h1 id="sample-closure" tabindex="-1">Sample Closure <a class="direct-link" href="#sample-closure"> </a></h1>
+<h1 id="sample-closure" tabindex="-1">Sample Closure</h1>
 <pre><code class="language-js">function counter() {
   let number = 1
   return function() { console.log(number++) }
@@ -326,7 +326,7 @@ steps() // 2
 <p>We saw this already when we talked about how the return statement works.</p>
 <p>This function has an internal function that remembers the value of a variable.</p>
 <hr>
-<h1 id="closure-objects" tabindex="-1">Closure Objects <a class="direct-link" href="#closure-objects"> </a></h1>
+<h1 id="closure-objects" tabindex="-1">Closure Objects</h1>
 <pre><code>function myObject () {
     let myValue = 1;
     return {
