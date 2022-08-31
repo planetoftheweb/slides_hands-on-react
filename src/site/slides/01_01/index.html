@@ -82,7 +82,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_02</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">Mechanics of Functions</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">Classes or Hooks</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_02&#">
@@ -96,7 +96,7 @@
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_03</span>
-                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">Definition Expressions</span>
+                        <span class="fw-bold lh-1 text-white" style="font-family: Asap; font-size: 1.1em">Components with Hooks</span>
                       </div>
                     </a>
                     <a class="flex-fill ms-3 text-end" style="color: #8C6621;" href="../../../?d=01_03&#">
@@ -292,7 +292,6 @@
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
 <h1 id="jsx" tabindex="-1">JSX</h1>
-<div class="slide-link"><a href="https://go.raybo.org/"><i class="fab fa-slideshare"></i> go.raybo.org/</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
@@ -376,27 +375,49 @@ export default App;
 <p>Instead of class, we use className and similarly with</p>
 <p>for, we use HTMLFor. It's something you have to remember and annoy you a bit as you write in JSX.</p>
 <hr>
-<h1 id="camelcase-attributes" tabindex="-1">camelCase Attributes</h1>
-<pre><code>&lt;button className=&quot;outline&quot; onClick={() =&gt; alert('Hi There')}&gt;Click me&lt;/button&gt;
-</code></pre>
-<ul>
-<li><code>onClick</code>, <code>onSubmit</code>, <code>onChange</code></li>
-</ul>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>As a matter of fact, all attributes in JSX are camelCased, so for things like an onClick event, you would also use a capital C.</p>
-<hr>
-<h1 id="inline-style-objects" tabindex="-1">Inline Style Objects</h1>
-<pre><code class="language-jsx">&lt;h1&gt;
-  Welcome
-  &lt;i style=&gt;{name}&lt;/i&gt;
-&lt;/h1&gt;
+<h1 id="expressions" tabindex="-1">Expressions</h1>
+<pre><code class="language-jsx">const name = 'StarGazers';
+...
+&lt;h1&gt;Meet the &lt;i&gt;{name}&lt;/i&gt;&lt;/h1&gt;
 </code></pre>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>When you want to use inline styles within JSX, you have to use an object to define it.</p>
+<p>You can use expressions in your code, so if you create a variable for an element, you can use it in the JSX.</p>
+<p>The expressions can be a variable name and other valid JavaScript expressions.</p>
+<pre><code class="language-jsx">
+---
+
+# Inline Styles
+
+&lt;pre&gt;&lt;code data-trim data-noescape&gt;&lt;script type=&quot;text/template&quot;&gt;
+    &lt;h1&gt;Meet the &lt;i style=&gt;{name}&lt;/i&gt;&lt;/h1&gt;
+&lt;/script&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&gt; &gt;
+
+You can also use them to pass along values into your tags. This is the way you add inline styles into your code. However instead of writing regular CSS you create an object. If the selector has more than one word, you can also use camelCase.
+
+```jsx
+
+```jsx
+
+---
+
+# camelCase Attributes
+
+</code></pre>
+<p>&lt;button className=&quot;outline&quot; onClick={() =&gt; alert('Hi There')}&gt;Click me</button></p>
+<pre><code>
+- `onClick`, `onSubmit`, `onChange`
+
+&gt; &gt;
+
+As a matter of fact, all attributes in JSX are camelCased, so for things like an onClick event, you would also use a capital C, but it would be the same for things like onSubmit or onChange.
+
+
+JSX takes some getting used to, but it's a very powerful language. Once you get comfortable with it, you'll see that it is quite powerful.
+</code></pre>
 
         </main>
         <aside class="aside aside-supplemental col col-md-3 col-lg-2 d-none d-md-block">
@@ -423,10 +444,7 @@ export default App;
                     <li><a href="#reserved-keywords">Reserved Keywords</a>
             		</li>
 
-                    <li><a href="#camelcase-attributes">camelCase Attributes</a>
-            		</li>
-
-                    <li><a href="#inline-style-objects">Inline Style Objects</a>
+                    <li><a href="#expressions">Expressions</a>
             		</li>
                 </ol>
             </div>
