@@ -1,21 +1,21 @@
 [{
     "filename": "00_01",
-    "title": "JavaScript Functions" }
+    "title": "Hands-on JavaScript" }
 ,{
     "filename": "00_03",
     "title": "Slides" }
 ,{
     "filename": "01_01",
-    "title": "CodeSwing" }
+    "title": "JSX" }
 ,{
     "filename": "01_02",
-    "title": "Mechanics of Functions" }
+    "title": "Classes or Hooks" }
 ,{
     "filename": "01_03",
-    "title": "Definition Expressions" }
+    "title": "Components with Hooks" }
 ,{
     "filename": "01_04",
-    "title": "Parameters" }
+    "title": "Using Effects" }
 ,{
     "filename": "01_05",
     "title": "Hoisting and Scope" }
