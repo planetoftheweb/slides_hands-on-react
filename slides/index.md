@@ -1,10 +1,9 @@
 <!-- .slide: data-state="layout-title no-fragment"  -->
 
-# JavaScript
+# Hands On
+React
 
-Functions
-
-<div class="btn btn-warning mt-3 ">raybo.org/slides_handsonjs</div>
+<div class="btn btn-warning mt-3 ">raybo.org/slides_hands-on-react</div>
 
 <p class="small mt-5">
   <span class="badge bg-dark me-1 ms-2">t</span> toolbar
