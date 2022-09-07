@@ -63,8 +63,8 @@
                 
                 
                 
-                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color: #DC9F04" >
-                    <a class="text-decoration-none d-flex  text-light link-light " href="../01_01/index.html">
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color:#F0C051;">
+                    <a class="text-decoration-none d-flex " href="../01_01/index.html">
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
@@ -119,8 +119,8 @@
                   </div>
                 
                 
-                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color:#F0C051;">
-                    <a class="text-decoration-none d-flex " href="../03_01/index.html">
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color: #DC9F04" >
+                    <a class="text-decoration-none d-flex  text-light link-light " href="../03_01/index.html">
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">03_01</span>
@@ -151,133 +151,55 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="jsx" tabindex="-1">JSX</h1>
+<h1 id="creating-projects" tabindex="-1">Creating Projects</h1>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>Let's start by going over one of the things that people like...and dislike about React and that's JSX.</p>
+<p>Alright, so now that we know how React works, let's take a look at how you can work with projects.</p>
 <hr>
-<h1 id="jsx-1" tabindex="-1">JSX</h1>
+<h1 id="adding-react-to-a-site" tabindex="-1">Adding React to a Site</h1>
 <ul>
-<li>JavaScript Syntax Extension</li>
-<li>HTML &amp; JSX</li>
-<li>Templating</li>
+<li><a href="https://reactjs.org/docs/getting-started.html">Installation</a></li>
+<li>CDN <a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605">Code Sample</a></li>
 </ul>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>JSX is the language that you use to write React, it stands for JavaScript Syntax Extension, but also know and JavaScript XML since it's a combination of JavaScript and something that looks like the old XHTML version of HTML.</p>
-<p>Basically it's a way to write HTML inside JavaScript. It has a few strange rules of it's own, but it works real well.</p>
+<p>React has been around for so long that there's a lot of ways to work with it. You can install it into an existing page, create a new project or use a third party tool.</p>
+<p>There's a pretty thorough installation page in the documentation with a breakdown of the different ways you can install it. The main difference is whether you want to use a tool or install it with a CDN.</p>
+<p>The setup syntax is a bit different between the two. There are some good examples you can find that will show you how the code is different.</p>
 <hr>
-<h1 id="basic-sample" tabindex="-1">Basic Sample</h1>
-<pre><code class="language-jsx">function App() {
-  return &lt;h1&gt;Meet the StarGazers&lt;/h1&gt;;
-}
-export default App;
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>Okay, so at first, it looks like regular JavaScript, but you can see that we're using an h1 tag. This is the beauty of JSX, it lets you use both, together in almost perfect harmony.</p>
-<p>But, there's a lot of peculiarities to the language, so let's go further.</p>
-<hr>
-<h1 id="single-parent" tabindex="-1">Single Parent</h1>
-<pre><code class="language-jsx">&lt;hgroup&gt;
-  &lt;h1&gt;Meet the StarGazers&lt;/h1&gt;
-  &lt;p&gt;Members of an &lt;b&gt;intergalactic alliance&lt;/b&gt;...&lt;/p&gt;
-&lt;/hgroup&gt;
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>You are only allowed to use one parent element in your HTML. So, if I were to remove the hgroup tag here, I would get an error.</p>
-<p>Let's take a look at this in CodeSpaces. I'm going to go to the URL for the codespace.</p>
-<p>Sometimes, people use a fragment to solve this, so instead of the hgroup tag, you would use an empty element &lt;&gt;&lt;/&gt;.</p>
-<hr>
-<h1 id="self-closing-tags" tabindex="-1">Self Closing Tags</h1>
-<pre><code class="language-jsx">return (
-  &lt;hgroup&gt;
-    &lt;img src=&quot;images/group.svg&quot; alt=&quot;StarGazer Group&quot; /&gt;
-    &lt;hgroup&gt;
-      &lt;h1&gt;Meet the &lt;i&gt;{name}&lt;/i&gt;&lt;/h1&gt;
-      &lt;p&gt;Members of an &lt;b&gt;intergalactic alliance&lt;/b&gt;&lt;br /&gt;
-        paving the way for peace and benevolence among all species...&lt;/p&gt;
-    &lt;/hgroup&gt;
-  &lt;/hgroup&gt;
-);
-</code></pre>
+<h1 id="create-react-app" tabindex="-1">Create React App</h1>
 <ul>
-<li><code>&lt;br /&gt;</code> or <code>&lt;img /&gt;</code></li>
-<li>return with <code>()</code></li>
+<li><a href="https://nodejs.org">NodeJs</a></li>
+<li><a href="https://create-react-app.dev/">Create React App</a></li>
 </ul>
+<pre><code class="language-sh">npx create-react-app my-app
+</code></pre>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>In JSX, all tags have to self-close. So, if I were to remove the slash in the <br /> tag, I would get an error.</p>
-<p>The same thing would happen in an image tag.</p>
-<p>By the way, when you want to use multi line code in JSX, just like in JavaScript, the return statement can't be on a line by itself. So you have to use parenthesis otherwise your browser's compiler will add a semicolon and break the whole thing.</p>
+<p>When you're building an application, you're going to need some tooling. Tooling includes a developer environment with Live Reloading and other features that make your life easier.</p>
+<p>To use this, you'll need to have NodeJS installed, which you can find here.</p>
+<p>Once you do that, you can use an npx command to create a new React App. Let's try this out. I'm not using CodeSpaces for this, I'm just using my local computer using a terminal.</p>
+<p>Create React App is a nice way to add a development environment and get a decent starter template for your project.</p>
+<p>However, it's not what I used for this project. Let's take a look at that.</p>
 <hr>
-<h1 id="reserved-keywords" tabindex="-1">Reserved Keywords</h1>
-<pre><code>&lt;div className=&quot;container&quot;&gt;
-  &lt;article&gt;
-  ...
-  &lt;/article&gt;
-&lt;/div&gt;
-</code></pre>
+<h1 id="vite" tabindex="-1">Vite</h1>
 <ul>
-<li><code>className</code> instead of <code>class</code></li>
-<li><code>HTMLFor</code> instead of <code>for</code></li>
+<li><a href="https://vitejs.dev/">Vite</a></li>
+<li>HMR</li>
+<li>Sass Support</li>
 </ul>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>You can't use reserved JavaScript keywords like class or for in jsx.</p>
-<p>Instead of class, we use className and similarly with</p>
-<p>for, we use HTMLFor. It's something you have to remember and annoy you a bit as you write in JSX.</p>
-<hr>
-<h1 id="expressions" tabindex="-1">Expressions</h1>
-<pre><code class="language-jsx">const name = 'StarGazers';
-...
-&lt;h1&gt;Meet the &lt;i&gt;{name}&lt;/i&gt;&lt;/h1&gt;
+<pre><code class="language-sh">npm create vite@latest my-react
 </code></pre>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>You can use expressions in your code, so if you create a variable for an element, you can use it in the JSX.</p>
-<p>The expressions can be a variable name and other valid JavaScript expressions.</p>
-<pre><code class="language-jsx">
----
-
-# Inline Styles
-
-&lt;pre&gt;&lt;code data-trim data-noescape&gt;&lt;script type=&quot;text/template&quot;&gt;
-    &lt;h1&gt;Meet the &lt;i style=&gt;{name}&lt;/i&gt;&lt;/h1&gt;
-&lt;/script&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&gt; &gt;
-
-You can also use them to pass along values into your tags. This is the way you add inline styles into your code. However instead of writing regular CSS you create an object. If the selector has more than one word, you can also use camelCase.
-
-```jsx
-
-```jsx
-
----
-
-# camelCase Attributes
-
-</code></pre>
-<p>&lt;button className=&quot;outline&quot; onClick={() =&gt; alert('Hi There')}&gt;Click me</button></p>
-<pre><code>
-- `onClick`, `onSubmit`, `onChange`
-
-&gt; &gt;
-
-As a matter of fact, all attributes in JSX are camelCased, so for things like an onClick event, you would also use a capital C, but it would be the same for things like onSubmit or onChange.
-
-
-JSX takes some getting used to, but it's a very powerful language. Once you get comfortable with it, you'll see that it is quite powerful.
-</code></pre>
+<p>For this project, I used a new tool called Vite. It's built on top of a bundler like Webpack called Rollup.</p>
+<p>It has a lot of newer features like Hot Module Replacement or HMR, which makes it load super fast during development.</p>
+<p>It also has built in support for Sass out of the box, which is particularly useful for this project, since PicoCSS can be customized with Sass.</p>
+<p>You install it with an npm command, so you need nodejs as well, but it's a little gentler on the install and gives you more options.</p>
 
         </main>
         <aside class="aside aside-supplemental col col-md-3 col-lg-2 d-none d-md-block">
@@ -286,25 +208,16 @@ JSX takes some getting used to, but it's a very powerful language. Once you get 
             <div class="">
                 <ol>
                     
-                    <li><a href="#jsx">JSX</a>
+                    <li><a href="#creating-projects">Creating Projects</a>
             		</li>
 
-                    <li><a href="#jsx-1">JSX</a>
+                    <li><a href="#adding-react-to-a-site">Adding React to a Site</a>
             		</li>
 
-                    <li><a href="#basic-sample">Basic Sample</a>
+                    <li><a href="#create-react-app">Create React App</a>
             		</li>
 
-                    <li><a href="#single-parent">Single Parent</a>
-            		</li>
-
-                    <li><a href="#self-closing-tags">Self Closing Tags</a>
-            		</li>
-
-                    <li><a href="#reserved-keywords">Reserved Keywords</a>
-            		</li>
-
-                    <li><a href="#expressions">Expressions</a>
+                    <li><a href="#vite">Vite</a>
             		</li>
                 </ol>
             </div>
