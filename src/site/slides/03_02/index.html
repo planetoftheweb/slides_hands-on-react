@@ -63,8 +63,8 @@
                 
                 
                 
-                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color: #DC9F04" >
-                    <a class="text-decoration-none d-flex  text-light link-light " href="../01_01/index.html">
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color:#F0C051;">
+                    <a class="text-decoration-none d-flex " href="../01_01/index.html">
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">01_01</span>
@@ -133,8 +133,8 @@
                   </div>
                 
                 
-                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color:#F0C051;">
-                    <a class="text-decoration-none d-flex " href="../03_02/index.html">
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2"  style="background-color: #DC9F04" >
+                    <a class="text-decoration-none d-flex  text-light link-light " href="../03_02/index.html">
                       <i class="bi bi-file-text-fill me-2 lh-1" style="color: #8C6621;"></i>
                       <div class="d-flex flex-column lh-1">
                         <span class="fw-medium lh-1" style="color: #8C6621; font-size: .7em">03_02</span>
@@ -151,133 +151,53 @@
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="jsx" tabindex="-1">JSX</h1>
+<h1 id="customizing-styles" tabindex="-1">Customizing Styles</h1>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>Let's start by going over one of the things that people like...and dislike about React and that's JSX.</p>
+<p>So far, we've been using inline styles for customizing the css. Let's talk about different ways we can work with styles and add Sass support.</p>
 <hr>
-<h1 id="jsx-1" tabindex="-1">JSX</h1>
+<h1 id="useeffect-hook" tabindex="-1">useEffect Hook</h1>
 <ul>
-<li>JavaScript Syntax Extension</li>
-<li>HTML &amp; JSX</li>
-<li>Templating</li>
+<li><a href="https://reactjs.org/docs/getting-started.html">Installation</a></li>
+<li>CDN or App</li>
+<li>CDN <a href="https://gist.github.com/gaearon/faa67b76a6c47adbab04f739cba7ceda">Code Sample</a></li>
 </ul>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>JSX is the language that you use to write React, it stands for JavaScript Syntax Extension, but also know and JavaScript XML since it's a combination of JavaScript and something that looks like the old XHTML version of HTML.</p>
-<p>Basically it's a way to write HTML inside JavaScript. It has a few strange rules of it's own, but it works real well.</p>
-<hr>
-<h1 id="basic-sample" tabindex="-1">Basic Sample</h1>
-<pre><code class="language-jsx">function App() {
-  return &lt;h1&gt;Meet the StarGazers&lt;/h1&gt;;
+<p>React has been around for so long that there's a lot of ways to work with it. You can install it into an existing page, create a new project or use a third party tool.</p>
+<p>There's a pretty thorough installation page in the documentation with a breakdown of the different ways you can install it. The main difference is whether you want to use a tool or install it with a CDN.</p>
+<p>The setup syntax is a bit different between the two. There are some good examples you can find that will show you how the code is different.</p>
+<h2 id="css-files" tabindex="-1">CSS Files</h2>
+<p>Although I've been using inline styles. Sometimes they don't make sense when using React. It makes more sense to use a separate CSS file when reusing styles or trying to affect entire tags.</p>
+<p>For example, I wouldn't mind the headlines having a different color that's sort of a highlight.</p>
+<p>We can do that with simple CSS.</p>
+<pre><code class="language-css">h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+summary,
+a {
+  color: #3949ab;
 }
-export default App;
+
+a {
+  color: #3949ab;
+  cursor: pointer;
+}
 </code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>Okay, so at first, it looks like regular JavaScript, but you can see that we're using an h1 tag. This is the beauty of JSX, it lets you use both, together in almost perfect harmony.</p>
-<p>But, there's a lot of peculiarities to the language, so let's go further.</p>
-<hr>
-<h1 id="single-parent" tabindex="-1">Single Parent</h1>
-<pre><code class="language-jsx">&lt;hgroup&gt;
-  &lt;h1&gt;Meet the StarGazers&lt;/h1&gt;
-  &lt;p&gt;Members of an &lt;b&gt;intergalactic alliance&lt;/b&gt;...&lt;/p&gt;
-&lt;/hgroup&gt;
+<p>The PicoCSS site also has a great place where you can control some of the <a href="(https://picocss.com/docs/customization.html)">basic colors</a> for the site.</p>
+<p>It smartly uses CSS variables that allow you to customize the colors of the site.</p>
+<p>You can see all of the available variables at <a href="https://github.com/picocss/pico/blob/master/css/themes/default.css">this URL</a></p>
+<p>Now, I have forced the page to publish in light mode. It looks a bit better on these demos.</p>
+<p>I did that by adding an attribute to the HTML tag in our index.html file.</p>
+<pre><code>&lt;html lang=&quot;en&quot; data-theme=&quot;light&quot;&gt;
 </code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>You are only allowed to use one parent element in your HTML. So, if I were to remove the hgroup tag here, I would get an error.</p>
-<p>Let's take a look at this in CodeSpaces. I'm going to go to the URL for the codespace.</p>
-<p>Sometimes, people use a fragment to solve this, so instead of the hgroup tag, you would use an empty element &lt;&gt;&lt;/&gt;.</p>
-<hr>
-<h1 id="self-closing-tags" tabindex="-1">Self Closing Tags</h1>
-<pre><code class="language-jsx">return (
-  &lt;hgroup&gt;
-    &lt;img src=&quot;images/group.svg&quot; alt=&quot;StarGazer Group&quot; /&gt;
-    &lt;hgroup&gt;
-      &lt;h1&gt;Meet the &lt;i&gt;{name}&lt;/i&gt;&lt;/h1&gt;
-      &lt;p&gt;Members of an &lt;b&gt;intergalactic alliance&lt;/b&gt;&lt;br /&gt;
-        paving the way for peace and benevolence among all species...&lt;/p&gt;
-    &lt;/hgroup&gt;
-  &lt;/hgroup&gt;
-);
-</code></pre>
-<ul>
-<li><code>&lt;br /&gt;</code> or <code>&lt;img /&gt;</code></li>
-<li>return with <code>()</code></li>
-</ul>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>In JSX, all tags have to self-close. So, if I were to remove the slash in the <br /> tag, I would get an error.</p>
-<p>The same thing would happen in an image tag.</p>
-<p>By the way, when you want to use multi line code in JSX, just like in JavaScript, the return statement can't be on a line by itself. So you have to use parenthesis otherwise your browser's compiler will add a semicolon and break the whole thing.</p>
-<hr>
-<h1 id="reserved-keywords" tabindex="-1">Reserved Keywords</h1>
-<pre><code>&lt;div className=&quot;container&quot;&gt;
-  &lt;article&gt;
-  ...
-  &lt;/article&gt;
-&lt;/div&gt;
-</code></pre>
-<ul>
-<li><code>className</code> instead of <code>class</code></li>
-<li><code>HTMLFor</code> instead of <code>for</code></li>
-</ul>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>You can't use reserved JavaScript keywords like class or for in jsx.</p>
-<p>Instead of class, we use className and similarly with</p>
-<p>for, we use HTMLFor. It's something you have to remember and annoy you a bit as you write in JSX.</p>
-<hr>
-<h1 id="expressions" tabindex="-1">Expressions</h1>
-<pre><code class="language-jsx">const name = 'StarGazers';
-...
-&lt;h1&gt;Meet the &lt;i&gt;{name}&lt;/i&gt;&lt;/h1&gt;
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>You can use expressions in your code, so if you create a variable for an element, you can use it in the JSX.</p>
-<p>The expressions can be a variable name and other valid JavaScript expressions.</p>
-<pre><code class="language-jsx">
----
-
-# Inline Styles
-
-&lt;pre&gt;&lt;code data-trim data-noescape&gt;&lt;script type=&quot;text/template&quot;&gt;
-    &lt;h1&gt;Meet the &lt;i style=&gt;{name}&lt;/i&gt;&lt;/h1&gt;
-&lt;/script&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&gt; &gt;
-
-You can also use them to pass along values into your tags. This is the way you add inline styles into your code. However instead of writing regular CSS you create an object. If the selector has more than one word, you can also use camelCase.
-
-```jsx
-
-```jsx
-
----
-
-# camelCase Attributes
-
-</code></pre>
-<p>&lt;button className=&quot;outline&quot; onClick={() =&gt; alert('Hi There')}&gt;Click me</button></p>
-<pre><code>
-- `onClick`, `onSubmit`, `onChange`
-
-&gt; &gt;
-
-As a matter of fact, all attributes in JSX are camelCased, so for things like an onClick event, you would also use a capital C, but it would be the same for things like onSubmit or onChange.
-
-
-JSX takes some getting used to, but it's a very powerful language. Once you get comfortable with it, you'll see that it is quite powerful.
-</code></pre>
+<p>If you take that off, it will respond to the system settings.</p>
 
         </main>
         <aside class="aside aside-supplemental col col-md-3 col-lg-2 d-none d-md-block">
@@ -286,25 +206,10 @@ JSX takes some getting used to, but it's a very powerful language. Once you get 
             <div class="">
                 <ol>
                     
-                    <li><a href="#jsx">JSX</a>
+                    <li><a href="#customizing-styles">Customizing Styles</a>
             		</li>
 
-                    <li><a href="#jsx-1">JSX</a>
-            		</li>
-
-                    <li><a href="#basic-sample">Basic Sample</a>
-            		</li>
-
-                    <li><a href="#single-parent">Single Parent</a>
-            		</li>
-
-                    <li><a href="#self-closing-tags">Self Closing Tags</a>
-            		</li>
-
-                    <li><a href="#reserved-keywords">Reserved Keywords</a>
-            		</li>
-
-                    <li><a href="#expressions">Expressions</a>
+                    <li><a href="#useeffect-hook">useEffect Hook</a>
             		</li>
                 </ol>
             </div>
