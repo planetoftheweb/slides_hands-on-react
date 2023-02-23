@@ -6,10 +6,10 @@
     "title": "Slides" }
 ,{
     "filename": "01_01",
-    "title": "Events" }
+    "title": "JSX" }
 ,{
     "filename": "01_02",
-    "title": "Properties and Methods" }
+    "title": "Classes or Hooks" }
 ,{
     "filename": "01_03",
     "title": "Components with Hooks" }
